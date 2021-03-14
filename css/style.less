@@ -1,0 +1,274 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 57px 0 156px;
+  background: #EEEFF1;
+
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+  }
+
+  .main-menu__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+
+    .main-menu__list-item_elem {
+      margin-left: 42px;
+      text-decoration: none;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      color: #000000;
+
+      &.active,
+      &:hover {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        color: #34547A;
+      }
+    }
+  }
+
+
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .slider__frame {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .slider__content {
+      flex-basis: 50%;
+    }
+
+    .slider__content {
+      h1 {
+        font-weight: 500;
+        font-size: 48px;
+        color: #000000;
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+        margin: 60px 0;
+      }
+
+      a {
+        font-size: 16px;
+        color: white;
+        padding: 25px 41px;
+        background: #34547A;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid transparent;
+      }
+
+      a:hover {
+        color: #34547A;
+        background: white;
+        border: 1px solid #34547A;
+      }
+    }
+  }
+}
+
+.about-me {
+  padding: 100px 0;
+
+  h2 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+  }
+}
+
+.portfolio {
+  padding: 100px 0;
+  background: #34547A;
+
+  .project-items {
+    display: flex;
+    justify-content: space-around;
+
+    .project-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        margin-right: 20px;
+      }
+
+      .count {
+        font-weight: 500;
+        font-size: 21px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.my-skill {
+  padding: 102px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .my-skill-stat {
+      flex-basis: 45%;
+
+      h2 {
+        font-weight: 500;
+        font-size: 32px;
+        color: #000000;
+        margin-bottom: 50px;
+      }
+
+      .skill-item {
+        margin-bottom: 30px;
+
+        p {
+          font-size: 16px;
+          color: #727272;
+          margin-bottom: 20px;
+        }
+
+        .skill-70 {
+          height: 4px;
+          background: linear-gradient(to right, #34547A 70%, #C4C4C4 70%);
+        }
+
+        .skill-90 {
+          height: 4px;
+          background: linear-gradient(to right, #34547A 90%, #C4C4C4 90%);
+        }
+
+        .skill-30 {
+          height: 4px;
+          background: linear-gradient(to right, #34547A 30%, #C4C4C4 30%);
+        }
+      }
+    }
+
+    .skill-image {
+      flex-basis: 45%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.how-i-work {
+  padding: 100px 0;
+
+  .container {
+    padding: 0 20px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 32px;
+      text-align: center;
+      color: #000000;
+    }
+
+    p {
+      max-width: 540px;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #727272;
+      margin: 50px auto 57px;
+    }
+  }
+}
+
+.photo-gallery {
+  padding: 0;
+
+
+  .photo-gallery__images {
+    display: flex;
+    flex-wrap: wrap;
+
+    .photo-gallery__images-item {
+      position: relative;
+      flex-basis: 25%;
+
+      img {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 2;
+      }
+
+
+
+      .eye {
+        img {
+          width: auto;
+          position: absolute;
+          top: calc(50% - 38px);
+          left: calc(50% - 40px);
+          z-index: 1;
+        }
+      }
+
+      &:hover {
+        img {
+          filter: brightness( 40%);
+        }
+
+        .eye img {
+          z-index: 5;
+          filter: brightness(100%);
+        }
+      }
+    }
+  }
+}
