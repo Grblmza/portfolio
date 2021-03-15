@@ -295,6 +295,12 @@ body {
   font-size: 14px;
   display: inline-block;
   margin: 0 auto;
+  border: 1px solid transparent;
+}
+.contact-service .container .submitting-a-form-button:hover {
+  border: 1px solid #34547A;
+  background: white;
+  color: #34547A;
 }
 .footer-info {
   padding: 50px 0;
